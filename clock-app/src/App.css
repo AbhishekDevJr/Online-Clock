@@ -28,6 +28,7 @@ body{
   align-items : center;
   width : 100vw;
   gap : 40px;
+  z-index: -1;
 }
 
 .right-digit{
@@ -59,4 +60,72 @@ body{
   flex-direction : row;
   justify-content : center;
   align-items : center;
+}
+
+.line{
+  border : 5px solid rgb(16,16,16);
+  position : absolute;
+  width : 100vw;
+  z-index: 100;
+}
+
+@media(max-width : 1110px){
+  .left-digit, .right-digit{
+    font-size : 150px;
+  }
+
+  .right-digit p{
+    position : relative;
+    font-size : 50px;
+    top : 82px;
+    right : -10px;
+  }
+}
+
+@media(max-width : 700px){
+  .left-digit, .right-digit{
+    font-size : 100px;
+  }
+
+  .right-digit p{
+    position : relative;
+    font-size : 35px;
+    top : 55px;
+    right : -10px;
+  }
+}
+
+@media(max-width : 480px){
+  .left-digit, .right-digit{
+    font-size : 80px;
+    height : 65vh;
+  }
+
+  .right-digit p{
+    position : relative;
+    font-size : 25px;
+    top : 45px;
+    right : -10px;
+  }
+
+  .line{
+    border : 3px solid rgb(16,16,16);
+    position : absolute;
+    width : 100vw;
+    z-index: 100;
+  }
+}
+
+@media(max-width : 400px){
+  .left-digit, .right-digit{
+    font-size : 40px;
+    height : 50vh;
+  }
+
+  .right-digit p{
+    position : relative;
+    font-size : 20px;
+    top : 20px;
+    right : -10px;
+  }
 }
